@@ -6,13 +6,13 @@ const NavList = styled.ul`
   display: flex;
   flex-flow: column nowrap;
   position: fixed;
-  transition: all 0.15s linear;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+  transition: transform 0.4s ease-in-out;
   top: 0;
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: #1e2021;
   color: white;
     @media (min-width: 539px) {
       width: 50vw;
